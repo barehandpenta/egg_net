@@ -20,8 +20,8 @@ def preProcessing(filename):
 
 
 
-EPOCH = 1000
-check_point = "new" # last 
+EPOCH = 500
+check_point = "new" # last/ new 
 
 def main():
     inputs, targets = preProcessing('konel_egg_train.csv')
@@ -43,7 +43,7 @@ def main():
     print("Training done!")
     print("Saving weights file to ../data/egg_model_weights.csv")
     
-    network.save_model('../data/egg_model_weightsf.csv')
+    network.save_model('../data/egg_model_weights.csv')
 
     print("Done!")
     _test = input("Press Y for testing model / N to quit: ")
